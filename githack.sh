@@ -17,7 +17,7 @@ do
     fi;
     dt=${m}${d}"12001980"
     echo ${dt} >> README.md
-    cmd="sudo date ${dt} && git add . && git commit -m \"commit\""
+    cmd="date ${dt} && git add . && git commit -m \"commit\""
     eval ${cmd}
   done
 done
